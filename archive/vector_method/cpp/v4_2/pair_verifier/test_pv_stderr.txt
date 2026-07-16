@@ -1,0 +1,56 @@
+[2026-06-28 14:57:11][INFO] === PairVerifier 开始 (n_pairs=50, N_img=50, M=50) ===
+[2026-06-28 14:57:11][INFO] Phase D: MAD 清洗开始
+[2026-06-28 14:57:11][DEBUG] pv_mad 预过滤检查: init_med=14.638478 min_thresh=5.000000 sim.valid=1
+[2026-06-28 14:57:11][DEBUG] pv_mad 预过滤触发: pre_thresh=43.915433
+[2026-06-28 14:57:12][DEBUG] pv_mad 预过滤: init_med=14.638478 pre_thresh=43.915433 removed=5 keep=45 (重新 Umeyama 收敛)
+[2026-06-28 14:57:12][DEBUG] pv_mad 轮0: thresh=5.000000 removed=0 keep=45
+[2026-06-28 14:57:12][INFO] pv_mad: 1 轮, 清洗后 45 对 (剔除 5), RMS=0.401597"
+[2026-06-28 14:57:12][INFO] Phase D': 贝叶斯验证开始
+[2026-06-28 14:57:12][INFO] pv_bayes: n=45 σ=0.500000 RMS=0.401597 A_fov=40715040.790524 sqarcsec lnK=753.658403 decision=1
+[2026-06-28 14:57:12][INFO] Phase D': 三角形验证开始
+[2026-06-28 14:57:12][INFO] pv_triangle: n=45 total=1000 passed=899 ratio=0.899000 accepted=1
+[2026-06-28 14:57:12][INFO] === PairVerifier 完成: validated=1 (bayes=1 tri=1) ===
+[2026-06-28 14:57:12][INFO] === PairVerifier 开始 (n_pairs=50, N_img=50, M=50) ===
+[2026-06-28 14:57:12][INFO] Phase D: MAD 清洗开始
+[2026-06-28 14:57:12][DEBUG] pv_mad 预过滤检查: init_med=1.037708 min_thresh=5.000000 sim.valid=1
+[2026-06-28 14:57:12][DEBUG] pv_mad 轮0: thresh=5.000000 removed=0 keep=50
+[2026-06-28 14:57:12][INFO] pv_mad: 1 轮, 清洗后 50 对 (剔除 0), RMS=1.090674"
+[2026-06-28 14:57:13][INFO] Phase D': 贝叶斯验证开始
+[2026-06-28 14:57:13][INFO] pv_bayes: n=50 σ=1.090674 RMS=1.090674 A_fov=40715040.790524 sqarcsec lnK=750.531945 decision=1
+[2026-06-28 14:57:13][INFO] Phase D': 三角形验证开始
+[2026-06-28 14:57:13][INFO] pv_triangle: n=50 total=1000 passed=717 ratio=0.717000 accepted=0
+[2026-06-28 14:57:13][INFO] === PairVerifier 完成: validated=0 (bayes=1 tri=0) ===
+[2026-06-28 14:57:13][INFO] === PairVerifier 开始 (n_pairs=50, N_img=50, M=50) ===
+[2026-06-28 14:57:13][INFO] Phase D: MAD 清洗开始
+[2026-06-28 14:57:13][WARN] pv_mad: 初始 Umeyama 失败, 使用恒等变换
+[2026-06-28 14:57:13][DEBUG] pv_mad 预过滤检查: init_med=6245.743526 min_thresh=5.000000 sim.valid=0
+[2026-06-28 14:57:13][DEBUG] pv_mad 预过滤触发: pre_thresh=18737.230579
+[2026-06-28 14:57:13][DEBUG] pv_mad 轮0: thresh=8645.930419 removed=10 keep=40
+[2026-06-28 14:57:13][INFO] pv_mad: 1 轮, 清洗后 40 对 (剔除 10), RMS=5422.683516"
+[2026-06-28 14:57:13][INFO] Phase D': 贝叶斯验证开始
+[2026-06-28 14:57:13][INFO] pv_bayes: n=40 σ=5422.683516 RMS=5422.683516 A_fov=40715040.790524 sqarcsec lnK=-80.498444 decision=-1
+[2026-06-28 14:57:13][INFO] Phase D': 三角形验证开始
+[2026-06-28 14:57:13][INFO] pv_triangle: n=40 total=1000 passed=0 ratio=0.000000 accepted=0
+[2026-06-28 14:57:13][INFO] === PairVerifier 完成: validated=0 (bayes=0 tri=0) ===
+[2026-06-28 14:57:13][INFO] === PairVerifier 开始 (n_pairs=30, N_img=30, M=30) ===
+[2026-06-28 14:57:13][INFO] Phase D: MAD 清洗开始
+[2026-06-28 14:57:13][DEBUG] pv_mad 预过滤检查: init_med=0.150884 min_thresh=5.000000 sim.valid=1
+[2026-06-28 14:57:13][DEBUG] pv_mad 轮0: thresh=5.000000 removed=0 keep=30
+[2026-06-28 14:57:13][INFO] pv_mad: 1 轮, 清洗后 30 对 (剔除 0), RMS=0.157376"
+[2026-06-28 14:57:13][INFO] Phase D': 贝叶斯验证开始
+[2026-06-28 14:57:13][INFO] pv_bayes: n=30 σ=0.500000 RMS=0.157376 A_fov=40715040.790524 sqarcsec lnK=510.629729 decision=1
+[2026-06-28 14:57:13][INFO] Phase D': 三角形验证开始
+[2026-06-28 14:57:13][INFO] pv_triangle: n=30 total=4060 passed=3923 ratio=0.966256 accepted=1
+[2026-06-28 14:57:13][INFO] === PairVerifier 完成: validated=1 (bayes=1 tri=1) ===
+[2026-06-28 14:57:13][INFO] === PairVerifier 开始 (n_pairs=30, N_img=30, M=30) ===
+[2026-06-28 14:57:13][INFO] Phase D: MAD 清洗开始
+[2026-06-28 14:57:13][WARN] pv_mad: 初始 Umeyama 失败, 使用恒等变换
+[2026-06-28 14:57:13][DEBUG] pv_mad 预过滤检查: init_med=115.712587 min_thresh=5.000000 sim.valid=0
+[2026-06-28 14:57:13][DEBUG] pv_mad 预过滤触发: pre_thresh=347.137761
+[2026-06-28 14:57:13][DEBUG] pv_mad 轮0: thresh=176.082744 removed=3 keep=27
+[2026-06-28 14:57:13][INFO] pv_mad: 1 轮, 清洗后 27 对 (剔除 3), RMS=106.039406"
+[2026-06-28 14:57:13][INFO] Phase D': 贝叶斯验证开始
+[2026-06-28 14:57:13][INFO] pv_bayes: n=27 σ=106.039406 RMS=106.039406 A_fov=40715040.790524 sqarcsec lnK=158.128457 decision=1
+[2026-06-28 14:57:13][INFO] Phase D': 三角形验证开始
+[2026-06-28 14:57:13][INFO] pv_triangle: n=27 total=2925 passed=13 ratio=0.004444 accepted=0
+[2026-06-28 14:57:13][INFO] === PairVerifier 完成: validated=0 (bayes=1 tri=0) ===

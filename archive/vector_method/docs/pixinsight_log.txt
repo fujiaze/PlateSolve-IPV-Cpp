@@ -1,0 +1,356 @@
+Processing script file: C:/Program Files/PixInsight/src/scripts/AdP/ImageSolver.js
+* Code signature verified:
+script-id    : ImageSolver
+developer-id : PTeam
+timestamp    : 2025-04-02T16:51:57.069Z
+Detecting stars: 100%
+25224 stars found 
+
+DynamicPSF: Global context
+1 view(s)
+25224 star(s)
+25134 PSF fittings
+9.979 s
+* Removed 3460 conflicting sources (15.96 %)
+* Search quadtree generated with 21674 objects, 257 node(s), height = 5
+* Star matching tolerance: 2 px
+
+Gaia: Global context
+
+Installing Gaia DR3 database files...
+
+This database file contains encoded data for point sources extracted from the Gaia DR3 catalog, including positions, proper motions, parallaxes and photometric data, as well as data availability and quality flags.
+
+Copyright (c) 2022 Pleiades Astrophoto. All Rights Reserved
+
+This work has made use of data from the European Space Agency (ESA) mission Gaia (https://www.cosmos.esa.int/gaia), processed by the Gaia Data Processing and Analysis Consortium (DPAC, https://www.cosmos.esa.int/web/gaia/dpac/consortium). Funding for the DPAC has been provided by national institutions, in particular the institutions participating in the Gaia Multilateral Agreement.
+
+* Gaia Collaboration et al. (2016b): The Gaia mission (provides a description of the Gaia mission including spacecraft, instruments, survey and measurement principles, and operations).
+
+* Gaia Collaboration et al. (2022k): Gaia DR3: Summary of the contents and survey properties.
+
+* Babusiaux et al. (2022): Gaia DR3: Catalogue validation.
+
+* Please consult the entire list of official Gaia DR3 papers on https://www.cosmos.esa.int/web/gaia/dr3-papers.
+
+D:/Gaia/GaiaDR3/gdr3-1.0.0-01.xpsd
+Database version .... GaiaDR3 1.0.0
+Magnitude range ..... (-2.00,16.59]
+Total sources ....... 119686482
+Total index nodes ... 333959 (15.287 MiB)
+
+D:/Gaia/GaiaDR3/gdr3-1.0.0-02.xpsd
+Database version .... GaiaDR3 1.0.0
+Magnitude range ..... (16.59,17.61]
+Total sources ....... 118768219
+Total index nodes ... 330981 (15.151 MiB)
+
+D:/Gaia/GaiaDR3/gdr3-1.0.0-03.xpsd
+Database version .... GaiaDR3 1.0.0
+Magnitude range ..... (17.61,18.24]
+Total sources ....... 119336915
+Total index nodes ... 332292 (15.211 MiB)
+
+D:/Gaia/GaiaDR3/gdr3-1.0.0-04.xpsd
+Database version .... GaiaDR3 1.0.0
+Magnitude range ..... (18.24,18.69]
+Total sources ....... 118567157
+Total index nodes ... 331836 (15.190 MiB)
+
+D:/Gaia/GaiaDR3/gdr3-1.0.0-05.xpsd
+Database version .... GaiaDR3 1.0.0
+Magnitude range ..... (18.69,19.04]
+Total sources ....... 119650050
+Total index nodes ... 337231 (15.437 MiB)
+
+D:/Gaia/GaiaDR3/gdr3-1.0.0-06.xpsd
+Database version .... GaiaDR3 1.0.0
+Magnitude range ..... (19.04,19.33]
+Total sources ....... 119526549
+Total index nodes ... 339891 (15.559 MiB)
+
+D:/Gaia/GaiaDR3/gdr3-1.0.0-07.xpsd
+Database version .... GaiaDR3 1.0.0
+Magnitude range ..... (19.33,19.58]
+Total sources ....... 118458577
+Total index nodes ... 337691 (15.458 MiB)
+
+D:/Gaia/GaiaDR3/gdr3-1.0.0-08.xpsd
+Database version .... GaiaDR3 1.0.0
+Magnitude range ..... (19.58,19.80]
+Total sources ....... 116524691
+Total index nodes ... 329665 (15.091 MiB)
+
+D:/Gaia/GaiaDR3/gdr3-1.0.0-09.xpsd
+Database version .... GaiaDR3 1.0.0
+Magnitude range ..... (19.80,20.00]
+Total sources ....... 115974683
+Total index nodes ... 325322 (14.892 MiB)
+
+D:/Gaia/GaiaDR3/gdr3-1.0.0-10.xpsd
+Database version .... GaiaDR3 1.0.0
+Magnitude range ..... (20.00,20.19]
+Total sources ....... 118619057
+Total index nodes ... 333173 (15.251 MiB)
+
+D:/Gaia/GaiaDR3/gdr3-1.0.0-11.xpsd
+Database version .... GaiaDR3 1.0.0
+Magnitude range ..... (20.19,20.36]
+Total sources ....... 113293276
+Total index nodes ... 318600 (14.584 MiB)
+
+D:/Gaia/GaiaDR3/gdr3-1.0.0-12.xpsd
+Database version .... GaiaDR3 1.0.0
+Magnitude range ..... (20.36,20.52]
+Total sources ....... 112898633
+Total index nodes ... 318518 (14.581 MiB)
+
+D:/Gaia/GaiaDR3/gdr3-1.0.0-13.xpsd
+Database version .... GaiaDR3 1.0.0
+Magnitude range ..... (20.52,20.68]
+Total sources ....... 117380101
+Total index nodes ... 332686 (15.229 MiB)
+
+D:/Gaia/GaiaDR3/gdr3-1.0.0-14.xpsd
+Database version .... GaiaDR3 1.0.0
+Magnitude range ..... (20.68,20.84]
+Total sources ....... 115999526
+Total index nodes ... 328050 (15.017 MiB)
+
+D:/Gaia/GaiaDR3/gdr3-1.0.0-15.xpsd
+Database version .... GaiaDR3 1.0.0
+Magnitude range ..... (20.84,21.05]
+Total sources ....... 118062683
+Total index nodes ... 334076 (15.293 MiB)
+
+D:/Gaia/GaiaDR3/gdr3-1.0.0-16.xpsd
+Database version .... GaiaDR3 1.0.0
+Magnitude range ..... (21.05,25.59]
+Total sources ....... 43507833
+Total index nodes ... 122983 (5.630 MiB)
+
+9.499 s
+
+Searching for optimal magnitude limit. Target: 31530 stars
+
+Gaia: Global context
+119.810 ms
+m = 10.05, 1431 stars
+
+Gaia: Global context
+822.828 ms
+m = 17.82, 2073948 stars
+
+Gaia: Global context
+111.067 ms
+m = 13.94, 71996 stars
+
+Gaia: Global context
+81.889 ms
+m = 11.99, 10857 stars
+
+Gaia: Global context
+90.780 ms
+m = 12.96, 28303 stars
+
+Gaia: Global context
+99.862 ms
+m = 13.45, 44806 stars
+
+Gaia: Global context
+95.420 ms
+m = 13.21, 35557 stars
+
+Gaia: Global context
+92.018 ms
+m = 13.09, 31704 stars
+
+* Using an automatically calculated limit magnitude of 13.09.
+Seed parameters for plate solving:
+   Center coordinates: RA = 18 11 14.000, Dec = -13 10 37.00
+   Resolution: 6.188 as/px
+
+
+Gaia: Global context
+Executing Gaia DR3 search command...
+83670 sources found.
+252.216 ms
+Catalog Gaia DR3 (XPSD): 83670 objects.
+
+StarAlignment: Processing view: Galaxy_Center_mosaic1_T4_flying_dutchman_20250702_061703_180S_Red
+C:/Users/fujia/AppData/Local/Temp/stars-001.csv:
+Scanning star data: done
+15159 stars.
+Galaxy_Center_mosaic1_T4_flying_dutchman_20250702_061703_180S_Red:
+Structure map: done
+Detecting stars: done
+26237 stars found.
+Minimum star size: 3 px
+* Computing global linear transformation.
+* Reference image: limiting to 2000 brightest stars.
+* Target image: limiting to 2000 brightest stars.
+Matching stars: done
+
+1547 putative star pair matches.
+Performing RANSAC: done
+1452 star pair matches in 90 RANSAC iterations.
+* Summary of model properties:
+Inliers       : 0.939
+Overlapping   : 0.997
+Regularity    : 0.990
+Quality       : 0.939
+Root mean square error:
+delta_RMS     :  0.851 px
+RMS error deviation:
+sigma_RMS     :  0.369 px
+Peak errors:
+delta_x_max   :  1.956 px
+delta_y_max   :  1.983 px
+translation   :   5347.78 px
+translation_x :  +4006.69 px
+translation_y :  +3541.91 px
+rotation      :   -179.98 deg
+scale         : 1.019
+scale_x       : 1.019
+scale_y       : 1.018
+* Projective transformation matrix:
+     -0.982351     +0.000341  +4006.693213
+     -0.000683     -0.981927  +3541.911802
+     -0.000000     -0.000000     +1.000000
+3.590 s
+
+Gaia: Global context
+Executing Gaia DR3 search command...
+33558 sources found.
+113.871 ms
+Catalog Gaia DR3 (XPSD): 33558 objects.
+Surface sparsity : median = 1.45, sigma = 0.19, threshold = 4.00
+Matching errors  : median = 0.16 px, sigma = 0.12 px, peak = 4.47 px
+Matched stars    : 13919 (68.83%)
+
+*****
+Initial alignment
+Image center ... RA: 18 11 18.314  Dec: -13 07 53.82
+Resolution ..... 6.30 as/px
+RMS error ...... 0.439 px (13919 stars)
+Score .......... 9673.872
+*****
+
+Gaia: Global context
+Executing Gaia DR3 search command...
+33479 sources found.
+104.590 ms
+Catalog Gaia DR3 (XPSD): 33479 objects.
+Surface sparsity : median = 1.45, sigma = 0.19, threshold = 4.00
+Matching errors  : median = 0.09 px, sigma = 0.05 px, peak = 4.02 px
+Matched stars    : 13922 (68.90%)
+
+*****
+Iteration 1, delta = 17.552 as (2.79 px)
+Image center ... RA: 18 11 18.250  Dec: -13 07 53.93
+Resolution ..... 6.30 as/px
+RMS error ...... 0.195 px (13922 stars)
+Score .......... 11646.909
+*****
+
+Gaia: Global context
+Executing Gaia DR3 search command...
+33479 sources found.
+102.378 ms
+Catalog Gaia DR3 (XPSD): 33479 objects.
+Surface sparsity : median = 1.45, sigma = 0.19, threshold = 4.00
+Matching errors  : median = 0.09 px, sigma = 0.05 px, peak = 4.02 px
+Matched stars    : 13922 (68.89%)
+
+*****
+Iteration 2, delta = 1.435 as (0.23 px)
+Image center ... RA: 18 11 18.229  Dec: -13 07 53.96
+Resolution ..... 6.30 as/px
+RMS error ...... 0.195 px (13922 stars)
+Score .......... 11654.566
+*****
+
+Gaia: Global context
+Executing Gaia DR3 search command...
+33480 sources found.
+111.872 ms
+Catalog Gaia DR3 (XPSD): 33480 objects.
+Surface sparsity : median = 1.45, sigma = 0.19, threshold = 4.00
+Matching errors  : median = 0.09 px, sigma = 0.05 px, peak = 4.02 px
+Matched stars    : 13922 (68.89%)
+
+*****
+Iteration 3, delta = 0.104 as (0.02 px)
+Image center ... RA: 18 11 18.222  Dec: -13 07 53.97
+Resolution ..... 6.30 as/px
+RMS error ...... 0.195 px (13922 stars)
+Score .......... 11654.260
+*****
+
+Gaia: Global context
+Executing Gaia DR3 search command...
+33480 sources found.
+110.948 ms
+Catalog Gaia DR3 (XPSD): 33480 objects.
+Surface sparsity : median = 1.45, sigma = 0.19, threshold = 4.00
+Matching errors  : median = 0.09 px, sigma = 0.06 px, peak = 4.13 px
+Matched stars    : 13922 (68.90%)
+
+*****
+Iteration 4, delta = 0.035 as (0.01 px)
+Image center ... RA: 18 11 18.219  Dec: -13 07 53.97
+Resolution ..... 6.30 as/px
+RMS error ...... 0.201 px (13922 stars)
+Score .......... 11589.423
+*****
+
+Gaia: Global context
+Executing Gaia DR3 search command...
+33480 sources found.
+107.080 ms
+Catalog Gaia DR3 (XPSD): 33480 objects.
+Surface sparsity : median = 1.45, sigma = 0.19, threshold = 4.00
+Matching errors  : median = 0.09 px, sigma = 0.05 px, peak = 4.02 px
+Matched stars    : 13922 (68.89%)
+
+*****
+Iteration 5, delta = 0.012 as (0.00 px)
+Image center ... RA: 18 11 18.218  Dec: -13 07 53.97
+Resolution ..... 6.30 as/px
+RMS error ...... 0.195 px (13922 stars)
+Score .......... 11655.566
+*****
+
+* Convergence reached after 5 iterations.
+
+Saving keywords...
+Saving properties...
+
+==================================================================================================
+Creation time ............ 2026-05-24 12:59:24 UTC
+Creation software ........ PixInsight 1.9.3 / ImageSolver 6.3.1 (Windows)
+Reference catalog ........ Gaia DR3
+Linear transformation matrix (native[l,b] = matrix * image[x,y]):
+ +1.74856970e-03  +3.96813817e-07  -3.93490402e+00
+ -7.26468981e-07  +1.74921218e-03  -3.14700906e+00
+WCS transformation ....... DDM thin plate spline
+Control points ........... 13922
+Spline lengths ........... l:3998 b:3980 X:3981 Y:3878
+Surface residuals ........ l:0.173 px b:0.156 px X:0.899 as Y:0.843 as
+Projection ............... Gnomonic
+Projection origin ........ [2249.947337 1800.035248] px -> [RA: 18 11 18.219  Dec: -13 07 53.97]
+Resolution ............... 6.296 arcsec/px
+Rotation ................. -179.992 deg
+Reference system ......... ICRS
+Observation start time ... 2025-07-02 06:17:19 UTC
+Geodetic coordinates .....  71 45 54 W  30 28 15 S  1600 m
+Focal distance ........... 196.57 mm
+Pixel size ............... 6.00 um
+Field of view ............ 7d 52' 12.0" x 6d 17' 45.6"
+Image center ............. RA: 18 11 18.218  Dec: -13 07 53.97  ex: +0.000814 px  ey: -0.003805 px
+Image bounds:
+   top-left .............. RA: 17 54 59.898  Dec: -16 13 37.42  ex: -1.280349 px  ey: -1.064585 px
+   top-right ............. RA: 18 27 37.187  Dec: -16 13 55.62  ex: +0.171504 px  ey: -1.161172 px
+   bottom-left ........... RA: 17 55 25.289  Dec:  -9 58 16.49  ex: -1.093484 px  ey: +1.055869 px
+   bottom-right .......... RA: 18 27 12.440  Dec:  -9 58 18.82  ex: +0.226120 px  ey: +1.080094 px
+==================================================================================================

@@ -1,0 +1,26 @@
+src/vm4_core.cpp: In function 'vm4::V4PhaseABResult vm4::record_and_filter(const double*, int, const double*, int, double, double, double, int, int, int, int, int, double)':
+src/vm4_core.cpp:241:9: warning: unused parameter 'min_inliers' [-Wunused-parameter]
+  241 |     int min_inliers, int seed, double fov_diag_asec)
+      |     ~~~~^~~~~~~~~~~
+src/vm4_core.cpp: In function 'vm4::CleanResult vm4::iterative_mad_clean(const double*, int, const double*, int, const std::vector<Pair>&, double)':
+src/vm4_core.cpp:596:47: warning: unused parameter 's0' [-Wunused-parameter]
+  596 |     const std::vector<Pair>& expanded, double s0)
+      |                                        ~~~~~~~^~
+src/vm4_core.cpp: In function 'vm4::SIPResult vm4::fit_affine_sip_adaptive(const double*, const double*, const std::vector<int>&, const std::vector<int>&, double, double, double, double, double, double, double, int, int, const char*)':
+src/vm4_core.cpp:1209:17: warning: this 'for' clause does not guard... [-Wmisleading-indentation]
+ 1209 |                 for(int i=0;i<36;++i)fprintf(fw,"%s0.0",i?",":"");fprintf(fw,"],\n  \"RMS_PX\": 0.000000,\n  \"SIP_ORDER\": 0,\n");
+      |                 ^~~
+src/vm4_core.cpp:1209:67: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'for'
+src/vm4_core.cpp:1277:43: warning: 'CD_best[2]' may be used uninitialized [-Wmaybe-uninitialized]
+src/vm4_core.cpp:1278:35: warning: 'CD_best[1]' may be used uninitialized [-Wmaybe-uninitialized]
+src/vm4_core.cpp:1277:12: warning: 'CD_best[0]' may be used uninitialized [-Wmaybe-uninitialized]
+src/vm4_core.cpp:1254:12: note: 'CD_best' was declared here
+
+=== 编译结果 ===
+退出码: 0 (成功)
+DLL: vector_match_v4.dll (1137246 bytes)
+导出符号: vm4_solve, vm4_count_inliers
+
+=== 说明 ===
+所有警告均继承自 V3.5 原代码（vm35_core.cpp），V4.0 仅做重命名，未修改核心逻辑。
+vm4_write_wcs_file 在头文件中声明但未实现（与 V3.5 的 vm35_write_wcs_file 一致），故未导出。

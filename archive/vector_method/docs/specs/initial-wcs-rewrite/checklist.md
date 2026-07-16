@@ -1,0 +1,14 @@
+- [x] 旧star_alignment模块已归档到old/目录，附有用途说明
+- [x] 像素尺度和FOV计算结果与公式一致（scale=206.265×pixel/focal）
+- [x] 极限星等二分法在6~22mag范围内收敛，目标星数在[det_count, 1.2×det_count]内
+- [x] Gnomonic投影与现有C++实现交叉验证一致（误差<0.01 arcsec）
+- [x] 饱和星优先选择逻辑正确：≥10颗用饱和星，<10颗用饱和+亮星共100颗
+- [x] 三角匹配算法与siril atpmatch逻辑一致（ba/ca空间、投票矩阵、iter_trans）
+- [x] 4种翻转模式独立匹配，每种模式结果独立记录
+- [x] 最佳翻转模式选择逻辑正确（匹配数最多→RMS最小）
+- [ ] 全星点验证匹配后匹配数显著增长（>100对）— 需实际数据验证
+- [ ] 迭代重投影收敛：offset < 0.01 arcsec 或达到5次迭代上限 — 需实际数据验证
+- [ ] Python原型端到端测试RMS < 2px — 需实际数据验证
+- [x] C++ DLL编译成功，Python ctypes绑定可用
+- [x] PlateSolve统一API调用新模块，输出数据结构兼容
+- [x] DESIGN.md和memory.md已更新

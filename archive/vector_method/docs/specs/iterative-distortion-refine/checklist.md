@@ -1,0 +1,22 @@
+- [ ] PSMDistortion 结构体定义了六参数畸变模型（dx1,dx2,dx3,dy1,dy2,dy3）— 纯二次项，不含仿射
+- [ ] PSMIterRefineResult 结构体包含精化后的中心/比例尺/旋转/翻转/仿射(6参数)/畸变(6参数)/匹配信息
+- [ ] plate_solve.h 新增 PSOLVE_ERR_ITER_FAILED = 9 错误码
+- [ ] 六参数仿射模型：x'=a0+a1*x+a2*y, y'=b0+b1*x+b2*y
+- [ ] 六参数畸变模型：Δx=dx1*x²+dx2*x*y+dx3*y², Δy=dy1*x²+dy2*x*y+dy3*y²
+- [ ] 完整变换公式：x'=a0+a1*x+a2*y+dx1*x²+dx2*x*y+dx3*y², y'=b0+b1*x+b2*y+dy1*x²+dy2*x*y+dy3*y²
+- [ ] 仿射+畸变拟合：匹配对≥6时拟合12参数，<6时返回错误
+- [ ] 近距离匹配：Grid哈希最近邻搜索，初始搜索半径10px，逐步收紧至5px
+- [ ] 双向一致性检查：img→cat和cat→img互为最近邻
+- [ ] Sigma-clip过滤：3σ剔除离群匹配对
+- [ ] Gaia星点像素映射：Gnomonic投影→角度转像素→旋转→翻转→平移到图像中心
+- [ ] 矩形裁剪：投影到切平面→旋转→丢弃|x|>W/2或|y|>H/2的星点
+- [ ] 迭代精化主流程：映射→匹配→拟合→参数提取→收敛判断（RMS变化<1%或5次迭代）
+- [ ] 参数提取正确：比例尺=sqrt(a1²+a2²)×original_scale, 旋转角=atan2(a2,a1), 中心偏移逆投影到天球
+- [ ] iterative_refine.dll 编译成功，导出 psm_iterative_refine 和 psm_free_iter_refine_result
+- [ ] Python solve_iterative_refine() 方法包含完整调度流程：粗解析结果→Gaia查询→矩形裁剪→星等迭代→DLL精化→WCS更新
+- [ ] WCS更新逻辑正确：中心偏移→ΔRA/ΔDec, 旋转角→CD矩阵旋转, 比例尺→CD矩阵缩放
+- [ ] 日志输出包含：Gaia查询星数、矩形裁剪后星数、每次迭代的匹配数和RMS、仿射参数(6)+畸变参数(6)
+- [ ] 端到端测试：RMS从~7px降至<1px
+- [ ] 端到端测试：中心坐标偏差<5px
+- [ ] 端到端测试：旋转角精度<0.1°
+- [ ] 端到端测试：无畸变图像的畸变参数接近零

@@ -1,0 +1,20 @@
+{
+  "astap": {
+    "enabled": true,
+    "path": "C:\\Program Files\\astap\\astap.exe",
+    "max_stars": 500,
+    "timeout_seconds": 60
+  },
+  "gaia": {
+    "data_dir": "F:\\Astro dev\\Astro CS Normalization Database\\GaiaDR3SP",
+    "max_stars": 2000,
+    "mag_limit": 14.0
+  },
+  "solver": {
+    "use_header_wcs": true,
+    "blind_solve_fallback": true,
+    "min_matches": 6,
+    "max_iterations": 5,
+    "rms_threshold_pixels": 0.5
+  }
+}

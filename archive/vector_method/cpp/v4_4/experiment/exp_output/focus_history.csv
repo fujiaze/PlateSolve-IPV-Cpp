@@ -1,0 +1,3 @@
+﻿sample_idx,total_votes,n_nonzero_bins,peak_cluster,snr,peak_theta,peak_tx,peak_ty,confirmed,n_focused,n_discarded,focus_th_lo,focus_th_hi,focus_tx_lo,focus_tx_hi,focus_ty_lo,focus_ty_hi
+200,203,59,146,42.4335,-29.5,97.6352,-78.3392,0,0,0,0,0,0,0,0,0
+300,297,59,240,47.6768,-29.5,97.6352,-78.3392,1,23,39,-32.5,-26.5,20.0265,80.0265,-59.9456,0.054368

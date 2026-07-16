@@ -1,0 +1,15 @@
+- [ ] star_alignment 模块头文件定义了 PSMFlipMode, PSMStarAlignmentInput, PSMStarAlignmentResult 数据结构
+- [ ] star_alignment 是纯匹配模块：不包含Gaia查询/投影逻辑，只接收两个同尺度2D点集
+- [ ] 四种翻转模式匹配逻辑正确：NONE→X→Y→XY，评分选择最佳
+- [ ] 提前终止条件生效：matched ≥ 50 且 mean_dist ≤ 5px 时停止尝试后续模式
+- [ ] 输出偏移量 offset_x/offset_y = 仿射平移项 (a0, b0)
+- [ ] 输出旋转角 rotation_deg = atan2(a2, a1) × 180/π
+- [ ] 尺度因子 sqrt(a1²+a2²) 接近1.0（因为输入已同尺度）
+- [ ] psm_star_align() 成功时 matched_count ≥ 30（match_threshold）
+- [ ] psm_star_align() 失败时返回 PSM_ERR_NO_MATCH
+- [ ] star_alignment.dll 编译成功，导出 psm_star_align 和 psm_free_star_alignment_result
+- [ ] rms_calc 新增 psm_rms_evaluate_model() 函数，支持完整模型评估+评分
+- [ ] Python测试脚本包含完整流程：FITS读取→检测→Gaia查询+投影→匹配→WCS修正→标注图像
+- [ ] WCS修正正确：偏移量→ΔRA/ΔDec, 旋转角→CD矩阵旋转, 翻转→CD符号
+- [ ] 标注图像中：绿色=检测星点, 红色=Gaia星点, 黄色连线=匹配对，视觉对齐正确
+- [ ] 日志输出包含：每种翻转模式匹配结果、最终偏移量和旋转角

@@ -1,0 +1,6 @@
+编译命令: g++ -O3 -march=native -Wall -Wextra -std=c++17 -fopenmp -shared -static-libgcc -static-libstdc++ -lm -fopenmp -o vector_match_v4.dll src/vm4_core.cpp src/vm4_log.cpp -Iinclude -I../vector_match_v2/third_party
+
+编译结果: 成功 (退出码 0)
+输出文件: vector_match_v4.dll (1137246 bytes)
+导出符号: vm4_solve, vm4_count_inliers
+警告数: 7 (均继承自 V3.5 原代码，非 V4.0 新增)
