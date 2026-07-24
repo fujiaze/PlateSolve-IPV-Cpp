@@ -1,11 +1,21 @@
 # Plate Solve - 天文图像 WCS 求解库
 
+> **⚠️ 已封存（Archived）**：本仓库已于 2026-07-24 封存，不再继续独立开发与维护。所有代码与历史已合并到主仓库 [Astro-CS-Database](https://github.com/fujiaze/Astro-CS-Database) 的 `lib/plate_solve/` 目录下，后续开发与迭代统一在主仓库进行。本仓库保留为历史快照，欢迎提 issue 但不再合入新提交。
+>
+> **依赖迁移说明**：本模块依赖的 `astro_image_io`、`star_detector`、`gaia_client` 等共享库同样已封存并合并到主仓库 [Astro-CS-Database](https://github.com/fujiaze/Astro-CS-Database)，对应路径如下：
+> - `astro_image_io.dll` → 主仓库 `lib/astro_image_io/`
+> - `star_detector.dll` → 主仓库 `lib/star_detector/`
+> - `gaia_client.dll` → 主仓库 `lib/gaia_xpsd_client/`
+>
+> 如需使用本模块，请直接从主仓库 [Astro-CS-Database](https://github.com/fujiaze/Astro-CS-Database) 克隆获取完整代码与依赖。
+
 版本：V4.30 | 2026-07-12
 
 > 基于 IPV (Iterative Polygon Voting) 三角法 | 当前版本 V4.30 | 成功率 99.87% | RMS 中位 0.110px | 比 Siril 快 16%
 
 ## GitHub仓库
-- 仓库地址：https://github.com/fujiaze/PlateSolve-IPV-Cpp
+- **主仓库（推荐）**：https://github.com/fujiaze/Astro-CS-Database
+- 本仓库（历史快照，已封存）：https://github.com/fujiaze/PlateSolve-IPV-Cpp
 - 默认分支：main
 - 最新commit：9dafd79c
 
@@ -110,7 +120,10 @@ cd lib/plate_solve/cpp/ipv
 
 **编译环境**：g++ 16.1.0 (MSYS2 MinGW64), C++17, `-O3 -ffast-math -funroll-loops -fopenmp`
 
-**依赖 DLL**：`astro_image_io.dll`, `star_detector.dll`, `gaia_client.dll`
+**依赖 DLL**（已随本仓库一起封存，从主仓库 [Astro-CS-Database](https://github.com/fujiaze/Astro-CS-Database) 获取）：
+- `astro_image_io.dll` → 主仓库 `lib/astro_image_io/`
+- `star_detector.dll` → 主仓库 `lib/star_detector/`
+- `gaia_client.dll` → 主仓库 `lib/gaia_xpsd_client/`
 
 ### Python 调用
 
